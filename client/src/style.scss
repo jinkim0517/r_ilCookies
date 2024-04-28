@@ -6,7 +6,7 @@ $themeColor: #ff96ab;
   justify-content: center;
   font-family: "Poppins";
   flex-direction: column;
-  margin: -1%;
+  // margin: -1%;
 
     .spacer {
       height: 10rem;
@@ -61,7 +61,6 @@ $themeColor: #ff96ab;
     // FOOTER
 
     footer {
-      margin-top: 100px;
       padding: 20px;
       background-color: $themeColor;
       display: flex;
@@ -151,6 +150,16 @@ $themeColor: #ff96ab;
             }
           }
         }
+      }
+    }
+
+    .order {
+      justify-content: center;
+      align-items: center;
+
+      iframe {
+        width: 100%;
+        height: 7cqh;
       }
     }
   }
