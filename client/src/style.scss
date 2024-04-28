@@ -1,0 +1,156 @@
+$themeColor: #ff96ab;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.app {
+  display: flex;
+  justify-content: center;
+  font-family: "Poppins";
+  flex-direction: column;
+  margin: -1%;
+
+    .spacer {
+      height: 10rem;
+    }
+
+    // NAVBAR
+
+    .navbar {
+      background-color: $themeColor;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      height: 16vh;
+      position: sticky;
+      top: 0;
+      width: 100%;
+      z-index: 1;
+      padding: 1rem 0rem 1rem 0rem;
+
+      .container {
+        .logo {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding-top: 1vh;
+          img {
+            width: 40vw;
+            height: 10vh;
+          }
+        }
+        .links {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 15%;
+          margin-top: 0.5rem;
+          
+
+          .link {
+            text-decoration: none;
+            justify-content: center;
+            align-items: center;
+            height: 20px;
+            color: white;
+            font-weight: bold;
+            font-size: 30px;
+          }
+        }
+      }
+    }
+
+    // FOOTER
+
+    footer {
+      margin-top: 100px;
+      padding: 20px;
+      background-color: $themeColor;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 16px;
+      img {
+        height: 50px;
+      }
+    }
+
+    .home {
+      width: 100%;
+      .head {
+        margin: 3rem 15% 3rem 15%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+
+    // COOKIES
+    .cookiesSection {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      h1 {
+        padding-top: 2rem
+      }
+
+      .cookies {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 0rem 2rem 3rem 2rem;
+
+        
+        .cookie {
+          display: flex;
+          gap: 2rem;
+          justify-content: space-around;
+          align-items: center;
+
+          &:nth-child(2n + 1) {
+            flex-direction: row-reverse;
+          }
+
+          .img {
+            flex: 2;
+            position: relative; 
+
+            &::after {
+              content: "";
+              width: 100%;
+              height: 100%;
+              background-color: $themeColor;
+              position: absolute;
+              top: 10px;
+              left: -10px;
+              z-index: -1;
+            }
+
+            img {
+              width: 100%;
+              max-height: 300px;
+              object-fit: cover;
+            }
+          }
+          
+          .content {
+            flex: 3;
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+
+            h1 {
+              font-size: 17px;
+            }
+
+            p {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
